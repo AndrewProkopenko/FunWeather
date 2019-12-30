@@ -54,6 +54,8 @@ body {
   text-transform: uppercase;
   color: #fff;
   white-space: nowrap;
+  cursor: default;
+  user-select: none;
 }
 .main-page-content .header-menu {
   list-style: none;
@@ -186,7 +188,7 @@ body {
   justify-content: center;
   align-items: center;
   cursor: default;
-  box-shadow: 0px 2px 3px rgba(0, 0, 0, 0.472);
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
   animation: phone-item 1800ms ease-in-out infinite alternate;
 }
 
@@ -624,7 +626,8 @@ body {
   z-index: 3;
 }
 .screenshot-text-container .screenshot-widgets span:nth-child(1):hover {
-  background: #c3cfe5;
+  background: #e6e6e6;
+  color: #7e8c91;
 }
 .screenshot-text-container .screenshot-widgets span:nth-child(2) {
   top: 0;
