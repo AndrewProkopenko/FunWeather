@@ -1,0 +1,24 @@
+.comment-content { 
+    margin-bottom: 100px;
+    padding-right: 30px;
+    padding-left: 30px;
+    img { 
+        &:last-child { 
+            float: right;
+        }
+    }
+    div { 
+        margin-top: 20px;
+        margin-bottom: 20px;
+        color: #353854;
+        font-size: 1.5rem;
+        line-height: 1.7;
+        font-weight:  400;
+    }
+    p { 
+        margin: 0;
+        color: #353854;
+        font-size: 1.125rem;
+        font-weight: 300;
+    }
+}

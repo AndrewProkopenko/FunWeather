@@ -1,0 +1,182 @@
+.screenshot-item { 
+    margin-top: 100px;
+}
+.screenshot-page-image-container { 
+    span {
+        text-transform: capitalize;
+        cursor: default;
+        &:nth-child(2) { 
+        // 15
+        font-size: 2rem;
+        background: #6ca3ff;
+        height: 100px;
+        width: 100px;
+        top: 57%;
+        left: -50px;  
+    }
+    &:nth-child(3) { 
+        // cloudy
+        background: #fcec64;
+        width: 100px;
+        height: 100px;
+        top: 25%;
+        right: 100px;  
+    }
+}
+}
+.screenshot-text-container { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    h2 { 
+        padding-top: 0;
+        margin: 30px 0 25px 0;
+        text-align: left;
+    }
+    p { 
+        font-size: 1.5rem;
+        color: #353854;
+        margin-bottom: 50px;
+    }
+    .screenshot-widgets { 
+        position: relative;
+        min-height: 60px;
+        min-width: 100px;
+        span { 
+            cursor: default;
+            color: #c3cfe5;
+            background: #fff;
+            width: 60px;
+            height: 60px;
+            font-size: 14px;
+            font-weight: bold;
+            border-radius: 100%;
+            box-shadow: 0 0 12px rgba(0, 0, 0, 0.15);
+            display: inline-flex;
+            justify-content: center;
+            align-items: center;
+            position: absolute;
+            transition: 300ms ease;
+            transform: perspective(20px) translateZ(0);
+            &:nth-child(1) { 
+                top: 0;
+                left: 0;
+                z-index: 3;
+                &:hover { 
+                    background: #c3cfe5;
+                }
+            }
+            &:nth-child(2) { 
+                top: 0;
+                left: 45px;
+                z-index: 2;
+            }
+            &:nth-child(3) { 
+                top: 0;
+                left: 90px;
+                z-index: 1;
+                &:hover { 
+                    background: #fcec64;
+                }
+            }
+            &:hover { 
+                background: #648cff;
+                color: #fff;
+                transform: perspective(20px) translateZ(4px);
+                z-index: 4;
+
+            }
+        }
+        
+    }
+}
+.sunny-id { 
+    .screenshot-widgets { 
+        span:hover { 
+            &:nth-child(2) { 
+                background: #fc6a42;
+            }
+            &:nth-child(3) { 
+                background: #f2a14e;
+            }
+        }
+    }
+    .screenshot-page-image-container { 
+        span { 
+            &:nth-child(2) { 
+                background: #fc6a42;
+            }
+            &:nth-child(3) { 
+                background: #f2a14e;
+            }
+        }
+    }
+}
+.rainy-id { 
+    .screenshot-widgets { 
+        span:hover { 
+            &:nth-child(2) { 
+                background: #7693c8;
+            }
+            &:nth-child(3) { 
+                background: #b8faee;
+                color: #7e8c91;
+            }
+        }
+    }
+    .screenshot-page-image-container { 
+        span { 
+            &:nth-child(3) { 
+                background: #b8faee;
+                color: #7e8c91;
+            }
+            &:nth-child(2) { 
+                background: #7693c8;
+            }
+        }
+    }
+}
+
+
+
+
+
+@media screen and (max-width: 769px) { 
+    .screenshot-page-image-container {  
+        span:nth-child(2) { 
+            // 15
+            width: 75px ;
+            height:  75px;
+            left: 0;
+            top: 15%;
+        }
+        span:nth-child(3) { 
+            // cloudy
+            width: 90px;
+            height: 90px;
+            right: 0;
+            top: 25%;
+        }
+    }
+}
+
+@media screen and (max-width: 575px) { 
+    .screenshot-page-image-container { 
+        span { font-size: 0.75rem !important;} 
+        span:nth-child(2) { 
+            // 15
+            width: 30px ;
+            height: 30px;
+            left: 0;
+            top: 70px;
+        }
+        span:nth-child(3) { 
+            // cloudy
+            width: 70px;
+            height: 70px;
+            right: 0;
+            top: 40px;
+        }
+    }
+}

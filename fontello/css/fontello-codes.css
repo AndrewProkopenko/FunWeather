@@ -1,0 +1,8 @@
+
+.icon-facebook:before { content: '\0fff'; } /* '࿿' */
+.icon-down-open:before { content: '\e800'; } /* '' */
+.icon-left-open:before { content: '\e801'; } /* '' */
+.icon-up-open:before { content: '\e802'; } /* '' */
+.icon-right-open:before { content: '\e803'; } /* '' */
+.icon-twitter-1:before { content: '\f099'; } /* '' */
+.icon-instagram:before { content: '\f16d'; } /* '' */
