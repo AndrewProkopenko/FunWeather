@@ -5,6 +5,27 @@ burger.addEventListener('click', () => {
     menu.classList.toggle('header-menu-close')
 }); 
 
+
+window.addEventListener('click', (event) => { 
+    console.log(1)
+    if( event.target != document.querySelectorAll('.header-menu a') &&  event.target != burger ) { 
+        burger.classList.remove('burger-open');
+        menu.classList.remove('header-menu-close')
+    }
+})
+
+// burger.classList.toggle('burger-open');
+// menu.classList.toggle('header-menu-close')
+
+function dd() { 
+    if ( burger.classList.length > 1) { 
+        
+        
+    }
+}
+dd ();
+
+
 let flag = 1; 
 let widgets = document.querySelectorAll('.widgets-section img');
 let btnWidLeft = document.querySelector('.icon-left-open');

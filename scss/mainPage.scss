@@ -32,7 +32,9 @@
                 padding: 0;
                 margin: 0;
                 display: flex;
-                flex-direction: column;
+                align-items: flex-end;
+                justify-content: space-between;
+                flex-wrap: wrap;
                 transition: 300ms ease;
                 li { 
                     z-index: 2;
@@ -69,8 +71,9 @@
 }
 
 #burger { 
+    z-index: 2;
     position: absolute;
-    top: 100px;
+    top: 95px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
@@ -115,26 +118,30 @@
 //настройка трансформации и цвета меню в зависимости от размера 
 @media screen and (max-width: 992px) { 
     .header-menu { 
+        justify-content: space-around;
         li { 
             
-            transform: translateX(-300px);
-            margin-top: 20px;
+            transform: translateX(0px);
+            // margin-top: 20px;
             max-width: 100px;
             padding-top: 15px;
             padding-bottom: 15px;
-            border-radius: 5px;
-            background:#f1562b;
+            // background:#f1562b;
             &:nth-child(4) { 
+                transform: translateX(-1000px);
                 transition-duration: 200ms;
                 }
                 &:nth-child(3) { 
+                transform: translateX(-1000px);
                 transition-duration: 300ms;
                 }
                 &:nth-child(2) { 
-                transition-duration: 400ms;
+                    transform: translateX(-1000px);
+                    transition-duration: 400ms;
                 }
                 &:nth-child(1) { 
                 transition-duration: 500ms;
+                transform: translateX(-1000px);
                 }
         } 
     }
@@ -148,17 +155,20 @@
  
 .header-menu-close { 
     li {
-        transform: translateX(0);
         &:nth-child(1) { 
+            transform: translateX(0)  !important;
         transition-duration: 200ms;
         }
         &:nth-child(2) { 
+            transform: translateX(0) !important;
         transition-duration: 300ms;
         }
         &:nth-child(3) { 
+            transform: translateX(0) !important;
         transition-duration: 400ms;
         }
         &:nth-child(4) { 
+            transform: translateX(0) !important;
         transition-duration: 500ms;
         }
     }
@@ -178,10 +188,11 @@
         justify-content: center; 
         align-items: center;
         cursor: default;
-        box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.2);
+        user-select: none;
+        box-shadow: 0px 2px 10px rgba(0, 0, 0, 0.15);
         animation: phone-item 1800ms ease-in-out infinite alternate ;
     }
-}
+} 
 .main-title { 
     height: 100%;
     display: flex;
