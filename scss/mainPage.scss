@@ -71,13 +71,13 @@
 }
 
 #burger { 
-    z-index: 2;
+    z-index: 22;
     position: absolute;
     top: 95px;
     display: none;
     flex-direction: column;
     justify-content: space-between;
-    width: 20px;
+    width: 30px;
     height: 20px;
     // overflow: hidden;
     cursor: pointer;
@@ -89,6 +89,7 @@
         background: #fff;
         transition: 300ms ease-in-out;
         border-radius: 3px;
+        z-index: 33 !important;
     }
 }
 
