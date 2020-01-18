@@ -1,20 +1,25 @@
-let burger = document.getElementById( 'burger'), 
+let burger = document.querySelector( '#burger p'), 
+    burgerIcon = document.querySelector('#burger'),
+    mainPage = document.querySelector('.main-page')
     menu = document.querySelector('.header-menu');
+
 burger.addEventListener('click', menuOpen); 
 
 
 function menuOpen() { 
-burger.classList.toggle('burger-open');
-menu.classList.toggle('header-menu-close')
-}
+    burgerIcon.classList.toggle('burger-open');
+    menu.classList.toggle('header-menu-close')
+}; 
 
-window.addEventListener('click', (event) => { 
+mainPage.addEventListener('click', (event) => { 
     
     if( event.target != document.querySelectorAll('.header-menu a') &&  event.target != burger) { 
-        burger.classList.remove('burger-open');
+        burgerIcon.classList.remove('burger-open');
         menu.classList.remove('header-menu-close');
     }
-})
+}); 
+
+
 
 let flag = 1; 
 let widgets = document.querySelectorAll('.widgets-section img');
